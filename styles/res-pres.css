@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sct-body {
+    padding: 0px;
+    margin: 0px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px;
+
+}
+
+.st-title{
+    width: 80%;
+    margin: auto;
+    min-height: 3.25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    background-color: rgba(251, 252, 253, 0.872) ;
+    border-top-right-radius: 35px;
+    border-start-start-radius: 35px;
+    cursor: pointer;
+}
+.sp-plus{
+    padding: 15px;
+    text-align: end;
+    cursor: pointer;
+}
+.sp-votos{
+    font-size: xx-large;
+}
+
+.cont-task1 {
+    width: 200px;
+    height: auto;
+    border: 1px solid grey;
+    border-left: 9px solid #bfdc68;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.cont-task2 {
+    width: 200px;
+    height: auto;
+    border: 1px solid grey;
+    border-left: 9px solid #dd9f19;    
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.cont-task3 {
+    width: 200px;
+    height: auto;
+    border: 1px solid grey;
+    border-left: 9px solid #5b97d7;
+    border-top: 4px solid #5b97d7;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 5px;
+}
+.cont-task4 {
+    width: 200px;
+    height: auto;
+    border: 1px solid grey;
+    
+    border-left: 9px solid #651273;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 5px;
+}
+.cont-task5 {
+    width: 200px;
+    height: auto;
+    border: 1px solid grey;
+    border-left: 9px solid #e94242;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 5px;
+}
+.accordion {    
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.accordion1 {    
+    width: 170px;
+    height: auto;
+    text-align: center;
+    border-top: 7px solid #bfdc68;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.accordion2 {    
+    width: 170px;
+    height: auto;
+    text-align: center;
+    border-top: 7px solid#dd9f19;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.accordion3 {    
+    width: 170px;
+    height: auto;
+    text-align: center;
+    border: 1px solid grey;
+    border-left: 11px solid #5b97d7;
+    border-top: 9px solid #5b97d7;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    overflow: hidden;
+}
+.accordion3:hover {  
+    padding: 15px;
+}
+.accordion4 {    
+    width: 170px;
+    height: auto;
+    text-align: center;
+    border-top: 7px solid #651273;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.accordion5 {    
+    width: 170px;
+    height: auto;
+    text-align: center;
+    border-top: 7px solid #e94242;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+
+.accordion__content {
+    padding: 10px 15px;
+    align-items: center;
+}
+
+.accordion__label {
+    font-size: 10px;
+    display:grid;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.1s;
+}
+
+.accordion__label:hover {
+   cursor: pointer;
+   
+}
+.section1 {
+    display: block;
+    margin-left: 20px;
+}
+.section2 {
+    display: block;
+    margin-left: 20px;
+}
+.section3 {
+    margin-left: 10px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+.section4 {
+    display: block;
+    margin-left: 20px;
+}
+.section5 {
+    display: block;
+    margin-left: 20px;
+}
+
+.accordion__content {
+    background: white;
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+}
+
+.accordion__input {
+    display: none;
+}
+
+.accordion__input:checked~.accordion__content {
+    display: block;
+}
+
+.h-12-w-12xx{
+    margin: auto;
+    align-self: center;
+}
+.pf-porc{
+    font-size: x-large;
+}
+
+button {
+    padding: 10px;
+    width: 95px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+li {
+    text-decoration: none;
+}
+
+.invisible {
+    color: #b7ddec;
+
+}
+
+.cont-btn {
+    text-align: center;
+}

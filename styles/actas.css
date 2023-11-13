@@ -1,0 +1,73 @@
+.columns {/*contiene al acta*/
+    margin: 5px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.cont-encab {
+    margin: 5px;
+    padding: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.mesa {
+    font-size: 35px;
+}
+
+.lbl-mesa {
+    font-size: 50px;
+
+    color: darkblue;
+    font-weight: bold;
+
+}
+
+.numMesa,
+.nMesa {
+    background-color: darkgray;
+}
+
+button {
+    padding: 10px;
+    width: 95px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    width: 120px;
+}
+
+.cont-regresar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.escudo {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    text-align: center;
+}
+button{
+    cursor: pointer;
+}
+.btn-regresar {
+    height: 40px;
+}
+
+.cont-btn {
+    text-align: center;
+}
+.btn-enviar{
+    font-weight: bold;
+    font-size: large;
+    color: white;
+    background-color:green;
+}
+.btn-borrar{
+background-color:tomato;
+}

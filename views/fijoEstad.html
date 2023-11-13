@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/head.css">
+    <link rel="stylesheet" href="/styles/main.css">    
+    <link rel="stylesheet" href="/styles/media.css">
+    <link rel="stylesheet" href="/styles/generales.css" >
+    <script src="../scripts/index.js"></script>
+    <script src="../scripts/resul.js"></script>
+  <style data-styled="active" data-styled-version="5.3.11"></style>
+      <title>Estadis</title>
+</head>
+
+<body>
+    <!--div class="dv-load" onclick="actualizar()" display="none" style="background-color: tomato;"> 
+        <img class="load" src="../assets/img/loading.gif" alt="cargando">
+    </div-->   
+    
+  <header>
+  <div class="columns">
+    <div class="dv-frencur" >
+    <span onclick="showTime()"> 
+        <img class="logo" src="../assets/logos/up-10cur.png" alt="frencur"  width="100" height="110">
+        <span > <p class="parrafototal"><b></b></p> </span>
+    </span>
+    </div>
+    <div class="dv-estadisticas">
+        
+    <div class="tabll">
+        <p><img class="icono" src='../assets/img/blanco.png' class='i'><b> Blancos: </b><span id="por-bla">303</span>&nbsp;</p>        
+        <p><img class="icono" src='../assets/img/anulados.png' class='i'><b> Anulados: </b><span id="por-anu"> 294</span>&nbsp;</p>
+        <p><img class="icono" src='../assets/img/participacion.png' class='i' onclick="actualizar()" > <b>&nbsp;Participación:</b><span id="por-par"> 75,15</span>&nbsp;%</p>
+        <!--table width='100%'>
+        <tr>
+            
+            <td class='aj'><img src='../assets/img/blanco.png' class='i'></td>
+            <td class='aj'><b>Blancos:</b><span class="por-bla"> 8</span>&nbsp;%</td>
+            <td class='aj'><img src='../assets/img/anulados.png' class='i'></td>
+            <td class='aj'><b>Anulados:</b><span class="por-anu"> 1,2</span>&nbsp;%</td>
+            <td class='aj'><img src='../assets/img/participacion.png' class='i'></td>
+            <td class='aj'><b>&nbsp;Participación:</b><span class="por-anu"> 69,6</span>&nbsp;%</td>
+        </tr>
+    </table--></div> 
+<hr><div>
+    <table width='100%'>
+        <tr>
+            <td colspan="3"> </td><td colspan="3"><b>Votos:</b>&nbsp;<span id="tolvo"> 25600</span> | <b>Escrutado:</b>&nbsp; <span id="escrut"> 101</span> mesas |
+                <b>Actualizado:</b>&nbsp;<large>23/10/2023 <span id="resul"> 11:39:16</span></large> </td>
+        </tr>
+    </table>
+    
+</div>
+<span ><p class="parrafototal">Electores: <b>34.064</b></p> </span>
+</div>
+</div>
+</header>
+  <!--button onclick="showTime()">Hora actual</button>
+        <p id="resul"><b></b></p-->
+<script src="../scripts/resul.js"></script>
+</body>
+</html>

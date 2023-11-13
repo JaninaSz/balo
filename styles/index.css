@@ -1,0 +1,49 @@
+html,
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    background: #82c7e2;
+}
+
+.cuadro {
+    background-color: rgb(245, 242, 238);
+    width: 300px;
+    text-align: center;
+    margin: 75px auto;
+    padding: 20px;
+    box-shadow: 3px 2px 42px 8px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+
+}
+
+.btn-login {
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 120px;
+    border-radius: 10px;
+}
+
+.btn-instru:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.time {
+    display: flex;
+    justify-content: end;
+}
+
+.columns {
+    margin: 5px;
+    display: flex;
+    align-items: flex-end;
+}
+.btn-instru {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #3498DB;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 10px;
+}

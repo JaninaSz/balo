@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"-->
+    <link rel="shortcut icon" href="../assets/logos/UxP-10.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/head.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/media.css">
+    <link rel="stylesheet" href="/styles/escuela.css">
+    <script src="../scripts/index.js"></script>
+    <title>Cómputos Curuzu</title>
+    <style type="text/css">
+        .oculto {
+            display: none;
+        }
+
+        .visible {
+            display: inline;
+        }
+    </style>
+
+    <!-- Bulma Version 0.9.0-->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
+</head>
+
+<body>
+    <!--span class="time">
+        <p>Hora: </p>
+        <div id="current_date">
+            <script>
+                document.getElementById("current_date").innerHTML = Date();
+            </script>
+        </div>
+    </span-->
+    <span class="time">
+        <div id="current_date">
+
+            <script>
+                //document.getElementById("current_date").innerHTML = Date();
+                // create a new `Date` object
+                var today = new Date();
+
+                // get the date and time
+                var now = '  ' + today.toLocaleString();
+                document.getElementById("current_date").innerHTML = (now);
+            </script>
+        </div>
+    </span>
+    <nav class="topNav">
+        <div class="cont-nav">
+
+            <!--nav class="navbar-topNav">
+        <div class="cont-title"-->
+            <div class="navbar-brand">
+
+                <div class="dv-link">
+                    <span><a href="../index.html"><img src="../assets/logos/up-10cur.png" alt="logo Frente Renovador"
+                                width="100" height="110">
+                            <p><b></b></p>
+                        </a></span>
+                </div>
+                <div>
+                    <h1>Cómputos Curuzú Cuatiá</h1>
+                </div>
+                <span class="navbarEnd">Cerrar sesión
+                </span>
+            </div>
+
+        </div>
+    </nav>
+
+    <nav class="navbar">
+        <div class="cont-menu">
+            <div class="navbar-menu">
+                <div class="navbar-start">
+
+                    <span class="navbar-item"><a href="escuelas.html">Escuelas </a></span>
+                    <span class="navbar-item"><a href="">Control de mesas</a></span>
+                    <span class="navbar-item"><a href="">Registro</a></span>
+                    <span class="navbar-item"><a href="resultados.html">Resultados</a></span>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="sct-body">
+
+            <div class="columns">
+
+                    <div class="cnt-lateral">
+
+                        <h2><b> Seleccione Escuela a cargar: </b></h2>
+                        <div class="box-content">
+                            <div class="form-group">
+                                <h3>Circuito 17</h3>
+                            </div>
+                            <div class="form-group">
+                                
+                                    <!--a link href="/views/oficial.html" target="ifr-escuela"> Oficial</a></li-->
+
+                                    <li><a link href="escuelas/belgrano.html" target="ifr-escuela"> N° 32 - Belgrano</a>
+                                    </li>
+                                    <li><a link href="escuelas/nacional.html" target="ifr-escuela"> N° 2 - Col.
+                                            Nacional</a></li>
+                                    <li><a link href="escuelas/sarmiento.html" target="ifr-escuela"> N° 564 -
+                                            Sarmiento</a></li>
+                                    <li><a link href="escuelas/tecnica.html" target="ifr-escuela"> N° 1 - Esc.
+                                            Técnica</a></li>
+                                    <li><a link href="escuelas/sorribes.html" target="ifr-escuela"> N° 3 - Col. Barnidio
+                                            Sorribes</a></li>
+                                    <li><a link href="escuelas/rosende.html" target="ifr-escuela"> N° 321 - Rosende</a>
+                                    </li>
+                                    <li><a link href="escuelas/malvinas.html" target="ifr-escuela"> N° 471 - 16 de
+                                            noviembre</a></li>
+                                    <li><a link href="escuelas/centenario.html" target="ifr-escuela"> N° 435 -
+                                            Centenario</a></li>
+                                    <li><a link href="escuelas/sanmartin.html" target="ifr-escuela"> N° 4 - Col. San
+                                            Martín</a>
+                                    </li>
+                                </ol>
+                            </div>
+
+                            <div class="form-group"><br>
+                                <h4>Circuito 18 - 1° secc.</h4>
+                                <ol start="10">
+                                    <li><a link href="escuelas/alberdi.html" target="ifr-escuela"> N° 565 - Alberdi</a>
+                                    </li>
+                                </ol>
+                            </div>
+
+                            <div class="box content" onclick="mostrar()">
+                                <p class="p-plus">más</p>
+                                <div class="oculto" id="oculto">
+                                    <div class="form-group"><br>
+                                        <h4>Circuito 19 - 2° secc.</h4>
+                                        <ol start="11">
+                                            <li> <a link href="escuelas/cazadores.html" target="ifr-escuela"> N° 572 -
+                                                    Est.
+                                                    Cazadores Correntinos</a></li>
+                                        </ol>
+                                    </div>
+
+                                    <div class="form-group"><br>
+                                        <h4>Circuito 20 - 3° secc.</h4>
+                                        <ol start="12">
+                                            <li> <a link href="escuelas/paraiso.html" target="ifr-escuela"> N° 575 - Pje.
+                                                    Paraíso</a>
+                                            </li>
+                                        </ol>
+                                    </div>
+
+                                    <div class="form-group"><br>
+                                        <h4>Circuito 21 - 4° secc.</h4>
+                                        <ol start="13">
+                                            <li> <a link href="escuelas/baibiene.html" target="ifr-escuela"> N° 585 -
+                                                    Pje.
+                                                    Baibiene</a></li>
+                                        </ol>
+                                    </div>
+
+                                    <div class="form-group"><br>
+                                        <h4>Circuito 22 - 5° secc.</h4>
+                                        <ol start="14">
+                                            <li><a link href="escuelas/perugo1.html" target="ifr-escuela"> N° 38 - José
+                                                    María Paz
+                                                    (Per.)</a></li>
+                                            <li><a link href="escuelas/perugo2.html" target="ifr-escuela"> N° 410 - Pcia.
+                                                    de Santa
+                                                    Cruz (Per.)</a></li>
+                                        </ol>
+                                    </div>
+                                    <br><br>
+                                    <a href="">Agregar Escuela</a> <br>
+                                    <a href="">Agregar Mesa</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont-mesas">
+                        <!--El iframe deberia estar hidden, solo ser visible al hacer clic en una Escuela y cargar la correspondiente-->
+                        <iframe class="ifr-mes" name="ifr-escuela" src=""></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="cnt-foot">
+            <div class="col-12 color10 text-center">
+                <p style="text-align:center"><strong>Gisela Yiyi S&aacute;nchez | Todos los derechos
+                        reservados</strong></p>
+                <p style="text-align:center">3774-455436</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

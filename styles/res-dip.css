@@ -1,0 +1,65 @@
+h3 {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px;
+}
+.h-12-w-12{    
+    margin: auto;
+    padding: 5px;
+    align-self: center;
+}
+
+.sp-votos {
+    font-size: xx-large;    
+    margin: auto;
+    align-self: center;
+}
+.cont-totpart {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.cont-todos {
+
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cont-parla{
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 15px;
+
+    align-self: center;
+
+    display:flex;   
+    justify-content: space-between;
+    align-items:center;
+   /*flex-direction: column; */
+}
+.cont-dip1,
+.cont-dip3,
+.cont-dip4,
+.cont-dip5 {
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 15px;
+}
+.cont-dip2 {
+    width: 200px;
+    height: auto;
+    border: 1px solid grey;
+    border-left: 9px solid #5b97d7;
+    border-top: 4px solid #5b97d7;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 5px;  
+}
+
+

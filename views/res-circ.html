@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/generales.css">
+    <link rel="stylesheet" href="/styles/res-part.css">
+    <style data-styled="active" data-styled-version="5.3.11"></style>
+    
+    <title>generales</title>
+</head>
+
+<body onload="cargar ()">
+    <div class="cont-tit">
+        <div class="tit"><h3> Resultados por circuito</h3><b><span class="sp-votos" id="sp-nci"></span></b></div><br>
+        <p class="sub" id="p-seleccionado"></p>
+    </div>
+  
+    <div class="cont-parla">
+        <label for="lbl-mesa"><b> Circuito: </b></label>
+        <select name="circ" id="sltCirc">
+            <option value="99"><b>Todos </b></option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+        </select><button class="btn-ver" onclick="selecCirc()">Consultar</button>
+
+                <label for="lbl-mesa"><b> Esc.: </b></label>
+                <select name="esc" id="sltEsc">
+                    <option><b>Todas</b></option>
+                    <option>Esc. Belgrano</option>
+                    <option>Col. Belgrano</option>
+                    <option>Esc. Sarmiento</option>
+                    <option>Esc. Tecnica</option>
+                    <option>Col. Sorribes</option>
+                    <option>Esc. Rosende</option>
+                    <option>Esc. 16 de Nov.</option>
+                    <option>Esc. Centenario</option>
+                    <option>Col. San Martin</option>
+                    <option>Esc. Alberdi</option>
+                    <option>Esc. Cazadores</option>
+                    <option>Esc. Paraiso</option>
+                    <option>Esc. Baibiene</option>
+                    <option>Esc. J M Paz</option>
+                    <option>Esc. Santa Cruz</option>
+                </select><button class="btn-ver" onclick="selecEsc()">Consultar</button>
+
+                <label id="lbl-mesa"><b> Mesa N° </b></label>
+                <select name="mesa" id="sltMes">
+                    <option><b>Todas</b></option>
+                    <option>1136</option>
+                    <option>1137</option>
+                    <option>1138</option>
+                    <option>1139</option>
+                    <option>1140</option>
+                    <option>1141</option>
+                    <option>1142</option>
+                    <option>1143</option>
+                    <option>1144</option>
+                    <option>1145</option>
+                    <option>1146</option>
+                    <option>1147</option>
+                    <option>1148</option>
+                    <option>1149</option>
+                    <option>1150</option>
+                    <option>1151</option>
+                    <option>1152</option>
+                    <option>1153</option>
+                    <option>1154</option>
+                    <option>1155</option>
+                    <option>1156</option>
+                    <option>1157</option>
+                    <option>1158</option>
+                    <option>1159</option>
+                    <option>1160</option>
+                    <option>1161</option>
+                    <option>1162</option>
+                    <option>1163</option>
+                    <option>1164</option>
+                    <option>1165</option>
+                    <option>1166</option>
+                    <option>1167</option>
+                    <option>1168</option>
+                    <option>1169</option>
+                    <option>1170</option>
+                    <option>1171</option>
+                    <option>1172</option>
+                    <option>1173</option>
+                    <option>1174</option>
+                    <option>1175</option>
+                    <option>1176</option>
+                    <option>1177</option>
+                    <option>1178</option>
+                    <option>1179</option>
+                    <option>1180</option>
+                    <option>1181</option>
+                    <option>1182</option>
+                    <option>1183</option>
+                    <option>1184</option>
+                    <option>1185</option>
+                    <option>1186</option>
+                    <option>1187</option>
+                    <option>1188</option>
+                    <option>1189</option>
+                    <option>1190</option>
+                    <option>1191</option>
+                    <option>1192</option>
+                    <option>1193</option>
+                    <option>1194</option>
+                    <option>1195</option>
+                    <option>1196</option>
+                    <option>1197</option>
+                    <option>1198</option>
+                    <option>1199</option>
+                    <option>1200</option>
+                    <option>1201</option>
+                    <option>1202</option>
+                    <option>1203</option>
+                    <option>1204</option>
+                    <option>1205</option>
+                    <option>1206</option>
+                    <option>1207</option>
+                    <option>1208</option>
+                    <option>1209</option>
+                    <option>1210</option>
+                    <option>1211</option>
+                    <option>1212</option>
+                    <option>1213</option>
+                    <option>1214</option>
+                    <option>1215</option>
+                    <option>1216</option>
+                    <option>1217</option>
+                    <option>1218</option>
+                    <option>1219</option>
+                    <option>1220</option>
+                    <option>1221</option>
+                    <option>1222</option>
+                    <option>1223</option>
+                    <option>1224</option>
+                    <option>1225</option>
+                    <option>1226</option>
+                    <option>1227</option>
+                    <option>1228</option>
+                    <option>1229</option>
+                    <option>1230</option>
+                    <option>1231</option>
+                    <option>1232</option>
+                    <option>1233</option>
+                    <option>1234</option>
+                    <option>1235</option>
+                    <option>1236</option>
+                </select> <button class="btn-ver" onclick="selecMes()">Consultar</button>
+                <br>          
+
+</div>
+<div>
+<!--table id="circu"> </table>
+<table id="resul"> 
+   
+      <tbody id="resu">
+      </tbody>
+</table>
+    </div>
+    <div class="form-group">
+        <select name="estados" id="estados"></select>
+    </div-->
+    <main>
+        <br><!-- sin tabla -->
+        <div class="cont-parlas">
+            <div class="cont-todos">
+                <p class="pf-part">Partidos</p>
+                <p>  |  </p>
+                <p class="pf-encab">Presidente - Vicepresidente</p>
+                <p class="pf-encab">Parl. Merc. Nacionales</p>
+                <p class="pf-encab">Diputados Nacionales</p>
+                <p class="pf-encab">Parl. Merc. Regionales</p>
+            </div>
+        </div>
+        <div id="resultodos"></div>
+            <div class="cont-task3" id="contTask3">
+                    <img class="log-part" src="../assets/logos/000132.png" alt="logo_agrupacion">
+
+                    <p class="sp-votos"><b><span id="tpd-1"></b></span></p>
+                    <p class="sp-votos"><span class="tpn-1" id="tpn-1"></span></p>
+                    <p class="sp-votos"><span class="tpd-1" id="tdp-1"></span></p>
+                    <p class="sp-votos"><span class="tpr-1" id="tpr-1"></span></p>
+            </div>
+                <hr>
+            <div class="cont-task1" id="contTask1">
+                
+                <p><b> <span class="sp-votos" id="tpd-2"></b></span></p>
+                <p class="sp-votos"><span class="tpn-1" id="tpn-2"></span></p>
+                <div class="sp-gris"><p> <span ></span></p></div>
+                <div class="sp-gris"><p> <span ></span></p></div>
+            </div>
+            <hr>
+            <div class="cont-task2" id="contTask2">
+                <img class="log-part" src="../assets/logos/000134.png" alt="logo_agrupacion">
+
+                <p class="sp-votos"><b> <span id="tpd-3"></b></span></p>
+                <p class="sp-votos"><span class="tpn-1" id="tpn-3"></span></p>
+                <p class="sp-votos"><span class="tpd-1" id="tdp-3"></span></p>
+                <p class="sp-votos"><span class="tpr-1" id="tpr-3"></span></p>
+            </div>
+            <hr>
+            <div class="cont-task4" id="contTask4">
+                <img class="log-part" src="../assets/logos/000135.png" alt="logo_agrupacion">
+                <p><b> <span class="sp-votos" id="tpd-1"></b></span></p>
+                <p class="sp-votos"><span class="tpn-1" id="tpn-4"></span></p>
+                <p class="sp-votos"><span class="tpd-1" id="tdp-4"></span></p>
+                <p class="sp-votos"><span class="tpr-1" id="tpr-4"></span></p>
+            </div>
+            <hr>
+            <div class="cont-task5" id="contTask5">
+                <img class="log-part" src="../assets/logos/000136.png" alt="logo_agrupacion">
+                <p class="sp-votos"><b> <span id="tpd-5"></b></span></p>
+                <p class="sp-votos"><span class="tpn-5" id="tpn-5"></span></p>
+                <div class="sp-gris"><p> <span></span></p></div>
+                <div class="sp-gris"><p> <span></span></p></div>
+            </div>
+        
+        
+    </main>    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="../scripts/readcirc.js"></script>
+    <script src="../scripts/readesc.js"></script>
+    <script src="../scripts/readmes.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+*{
+    margin:0px;
+    padding:0px;
+
+}
+
+html,
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    background: #82c7e2;
+    color:green;
+}
+.contador{
+    height:155px;
+    width: 320px;
+ transform: rotate(180deg);
+    margin: 200px 100px;
+    position: relative;
+  
+}
+
+.numero{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 12.8em;
+    font-weight: bold;
+    font-family:  sans-serif;
+   color: #555;
+    position: absolute;
+    transform: rotate(-180deg);
+    mix-blend-mode: screen;
+    background-color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.color_fondo{
+    transition: .2s;
+    transform-origin: bottom;
+    position: absolute;
+    display: block;
+   height: 0%;
+    width: 100%;
+    background-color: rgb(2, 5, 190);
+}

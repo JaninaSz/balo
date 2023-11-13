@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/img/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="/styles/head.css">
+    <link rel="stylesheet" href="/styles/main.css">    
+    <link rel="stylesheet" href="/styles/media.css">
+    <link rel="stylesheet" href="../styles/mesas.css">
+    <script src="../scripts/mesas.js"></script>
+    <script src="../scripts/actas.js"></script>
+    <title>Control de mesas</title>
+</head>
+
+<body>
+    <span class="time">
+        <p>Hora: </p>
+        <div id="current_date">
+            <script>
+                document.getElementById("current_date").innerHTML = Date();
+            </script>
+        </div>
+    </span>
+
+    <nav class="navbar-topNav">
+        <div class="cont-title">
+            <div class="navbar-brand">
+
+                <div>
+                    <span><a href="../index.html"><img src="../assets/img/frente.png" alt="logo Frente Renovador" width="120"
+                                height="120"> </span>
+                    <p><b>Frente Renovador</b></p></a>
+
+                </div>
+                <h1>Control</h1>
+                <span class="navbarEnd">Cerrar sesión</span>
+                </div>
+
+        </div>
+    </nav>
+
+    <nav class="navbar">
+
+        <div class="cont-menu">
+            <div class="men-prin">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="escuelas.html" >Escuelas </a>
+                    <a class="navbar-item" href="mesas.html">Control de mesas</a>
+                    <a class="navbar-item" href="" >Registro</a>
+                    <a class="navbar-item" href="resultados.php">Resultados</a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+       <div class="window-notice" id="window-notice">
+        <div class="content">
+            <div class="content-text">Esta sección es de uso exclusivo para los admnistradores.
+
+                <div class="content-buttons">
+                    <button class="close_window" onclick="close"> <a href="" id="close-button">Aceptar</a></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="columns">
+        <div class="column is-16">
+            <div class="box content">
+
+                <div class="form-group">
+                    <div class="cont-mesas">
+                        <h3>Las actas ya cargadas, están en color verde.</h3>
+                        <div class="cont-circuito">
+                            <label for="lbl-mesa">Seleccione circuito... </label>
+                            <select name="mesa" id="sltMesa" oninput="agrupar()" mesa>
+                                <option value="all">Todos</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                            </select><br>
+                            <label for="lbl-mesa">Escuela N° </label>
+                            <select name="mesa" mesa>
+                                <option>Todas</option>
+                                <option>Belgrano</option>
+                                <option>Nacional</option>
+                                <option>Sarmiento</option>
+                                <option>Tecnica</option>
+                                <option>Sorribes</option>
+                                <option>Rosende</option>
+                                <option>Centenario</option>
+                                <option>San Martin</option>
+                            </select><br>
+                        </div>
+                        <div class="cont-botones">
+                            <span id="cir17"><button id="btn-mes" onclick="clikmes();">1001</button>
+                            <button id="btn-mes" onclick="clikmes();">2</button>
+                            <button id="btn-mes" onclick="clikmes();">3</button>
+                            <button id="btn-mes" onclick="clikmes();">4</button>
+                            <button>5</button>
+                            <button>6</button>
+                            <button>7</button>
+                            <button>8</button>
+                            <button>9</button>
+                            <button>10</button>
+                            <button>11</button>
+                            <button>12</button>
+                            <button>13</button>
+                            <button>14</button>
+                            <button>15</button>
+                            <button>16</button>
+                            <button>17</button>
+                            <button>18</button>
+                            <button>19</button>
+                            <button>20</button></span>
+                            <span id="cir18"><button>21</button>
+                            <button>22</button>
+                            <button>23</button>
+                            <button>24</button>
+                            <button>25</button>
+                            <button>26</button>
+                            <button>27</button>
+                            <button>28</button>
+                            <button>29</button>
+                            <button>30</button></span>
+                            <span id="cir19"><button>31</button>
+                            <button>32</button>
+                            <button>33</button>
+                            <button>34</button>
+                            <button>35</button>
+                            <button>36</button>
+                            <button>37</button>
+                            <button>38</button>
+                            <button>39</button>
+                            <button>40</button></span>
+                            <span id="cir20"><button>41</button>
+                            <button>42</button>
+                            <button>43</button>
+                            <button>44</button>
+                            <button>45</button>
+                            <button>46</button>
+                            <button>47</button>
+                            <button>48</button>
+                            <button>49</button>
+                            <button>50</button></span>
+                            <span id="cir21">
+                            <button>51</button>
+                            <button>52</button>
+                            <button>53</button>
+                            <button>54</button>
+                            <button>55</button></span>
+                            <span id="cir22"><button>56</button>
+                            <button>57</button>
+                            <button>58</button>
+                            <button>59</button>
+                            <button>60</button></span>
+                        </div>
+                    </div>
+                </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

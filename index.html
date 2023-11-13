@@ -1,0 +1,107 @@
+<!--?php
+include("connection.php");
+$con = connection();
+
+$sql = "SELECT * FROM registro";
+$query = mysqli_query($con, $sql);
+?-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="shortcut icon" href="assets/logos/UxP-10.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/head.css">
+    <link rel="stylesheet" href="/styles/main.css">    
+    <link rel="stylesheet" href="/styles/media.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js"></script>
+    <title>Cómputos Curuzu</title>
+</head>
+
+<body>
+    <span class="time">
+        <p>Hora actual: </p>
+        <div id="current_date">
+            <script>
+                document.write(' ' + d.getHours() + ':' + d.getMinutes() + ': ' + d.getSeconds());
+            </script>
+        </div>
+    </span>
+    <nav class="topNav">
+        <div class="cont-nav">
+            <div class="navbar-brand">
+
+                <div cont-logo>
+                    <span>
+                        <a href="index.html">
+                            <img src="assets/logos/up-10cur.png" alt="logo Frente Renovador" width="100" height="110">
+                        </a> 
+                    </span><p><b></b></p>                    
+                </div>
+                <h1>Cómputos Curuzú Cuatiá</h1>
+                <div class="navbarEnd">
+                    <p>Cerrar sesión</p>
+                </div>
+            </div>
+            
+           
+        </div>
+    </nav>
+    <hr><br>
+    
+    <div class="cuadro">
+        <label for="user">Usuario: </label>
+        <input name="user" id="user" type="text" placeholder ="Yiyi" Usuario> <br>
+        <label for="clave">Clave U: </label>
+        <input id="clave" type="password" Clave>
+        <br>
+        <a href="views/escuelas.html"><button class="btn-login" onclick="validar()">Ingresar </button></a>
+    </div>
+    
+    <!-- 
+ 
+-->
+
+    <div class="timer">
+        <!--span>Tiempo conectado: </span>
+        <input class="timepage" size="5" id="timespent" name="timespent"><br>
+        <button id="msj" type="submit">Instrucciones</button>-->
+        <input class="btn-instru" type="submit" onclick="clicked();" value="Instrucciones" />
+    </div>
+    <div> <p id="resul"> </p></div>
+    <footer>
+        <div class="cnt-foot">
+            <div class="col-12 color10 text-center">
+                <p style="text-align:center"><strong>Gisela Yiyi S&aacute;nchez | Todos los derechos
+                        reservados</strong></p>
+                <p style="text-align:center">3774-455436</p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        function clicked() {
+            if (confirm('Ingresar con el USUARIO Y CLAVE proporcionados. \n\nLuego seleccionar la Escuela a cargar.\n\nSe habilitarán las mesas para la carga.')) {
+                yourformelement.submit();
+            } else {
+                return false;
+            }
+        }
+
+
+        startday = new Date(); clockStart = startday.getTime(); function initStopwatch() { var myTime = new Date(); return ((myTime.getTime() - clockStart) / 1000); }
+        function getSecs() { var tSecs = Math.round(initStopwatch()); 
+            var iSecs = tSecs % 60; var iMins = Math.round((tSecs - 30) / 60); 
+            var sSecs = "" + ((iSecs > 9) ? iSecs : "0" + iSecs); 
+            var sMins = "" + ((iMins > 9) ? iMins : "0" + iMins); 
+            //document.getElementById('timespent').value = sMins + ":" + sSecs; 
+            window.setTimeout('getSecs()', 1000); }
+        window.onload = function () {
+            window.setTimeout('getSecs()', 1);
+        }
+    </script>
+</body>
+
+</html>
