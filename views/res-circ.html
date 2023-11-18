@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/generales.css">
-    <link rel="stylesheet" href="/styles/res-part.css">
+    <link rel="stylesheet" href="/balo/styles/generales.css">
+    <link rel="stylesheet" href="../styles/media.css">
+    <link rel="stylesheet" href="/balo/styles/res-part.css">
     <style data-styled="active" data-styled-version="5.3.11"></style>
     
     <title>generales</title>
@@ -16,9 +17,10 @@
         <div class="tit"><h3> Resultados por circuito</h3><b><span class="sp-votos" id="sp-nci"></span></b></div><br>
         <p class="sub" id="p-seleccionado"></p>
     </div>
-  
+
     <div class="cont-parla">
-        <label for="lbl-mesa"><b> Circuito: </b></label>
+        <div>
+        <span class="lbl-mesa"><b> Circuito: </b></span>
         <select name="circ" id="sltCirc">
             <option value="99"><b>Todos </b></option>
             <option value="17">17</option>
@@ -27,9 +29,10 @@
             <option value="20">20</option>
             <option value="21">21</option>
             <option value="22">22</option>
-        </select><button class="btn-ver" onclick="selecCirc()">Consultar</button>
-
-                <label for="lbl-mesa"><b> Esc.: </b></label>
+        </select><hr><button class="btn-ver" onclick="selecCirc()">Consultar</button>
+        </div>
+                
+        <div><span class="lbl-mesa"><b> Esc.: </b></span>
                 <select name="esc" id="sltEsc">
                     <option><b>Todas</b></option>
                     <option>Esc. Belgrano</option>
@@ -47,9 +50,10 @@
                     <option>Esc. Baibiene</option>
                     <option>Esc. J M Paz</option>
                     <option>Esc. Santa Cruz</option>
-                </select><button class="btn-ver" onclick="selecEsc()">Consultar</button>
-
-                <label id="lbl-mesa"><b> Mesa N° </b></label>
+                </select><hr><button class="btn-ver" onclick="selecEsc()">Consultar</button>
+            </div>
+            <div>
+                <span id="lbl-mesa"><b> Mesa N° </b></span>
                 <select name="mesa" id="sltMes">
                     <option><b>Todas</b></option>
                     <option>1136</option>
@@ -153,9 +157,9 @@
                     <option>1234</option>
                     <option>1235</option>
                     <option>1236</option>
-                </select> <button class="btn-ver" onclick="selecMes()">Consultar</button>
+                </select> <hr><button class="btn-ver" onclick="selecMes()">Consultar</button>
                 <br>          
-
+            </div>
 </div>
 <div>
 <!--table id="circu"> </table>
@@ -170,63 +174,66 @@
     </div-->
     <main>
         <br><!-- sin tabla -->
-        <div class="cont-parlas">
+        <div class="contParla">
             <div class="cont-todos">
-                <p class="pf-part">Partidos</p>
-                <p>  |  </p>
                 <p class="pf-encab">Presidente - Vicepresidente</p>
-                <p class="pf-encab">Parl. Merc. Nacionales</p>
-                <p class="pf-encab">Diputados Nacionales</p>
-                <p class="pf-encab">Parl. Merc. Regionales</p>
             </div>
         </div>
-        <div id="resultodos"></div>
-            <div class="cont-task3" id="contTask3">
-                    <img class="log-part" src="../assets/logos/000132.png" alt="logo_agrupacion">
+        <div id="resultodos">
 
-                    <p class="sp-votos"><b><span id="tpd-1"></b></span></p>
-                    <p class="sp-votos"><span class="tpn-1" id="tpn-1"></span></p>
-                    <p class="sp-votos"><span class="tpd-1" id="tdp-1"></span></p>
-                    <p class="sp-votos"><span class="tpr-1" id="tpr-1"></span></p>
-            </div>
-                <hr>
-            <div class="cont-task1" id="contTask1">
-                
-                <p><b> <span class="sp-votos" id="tpd-2"></b></span></p>
-                <p class="sp-votos"><span class="tpn-1" id="tpn-2"></span></p>
-                <div class="sp-gris"><p> <span ></span></p></div>
-                <div class="sp-gris"><p> <span ></span></p></div>
-            </div>
             <hr>
             <div class="cont-task2" id="contTask2">
                 <img class="log-part" src="../assets/logos/000134.png" alt="logo_agrupacion">
 
                 <p class="sp-votos"><b> <span id="tpd-3"></b></span></p>
-                <p class="sp-votos"><span class="tpn-1" id="tpn-3"></span></p>
-                <p class="sp-votos"><span class="tpd-1" id="tdp-3"></span></p>
-                <p class="sp-votos"><span class="tpr-1" id="tpr-3"></span></p>
             </div>
             <hr>
-            <div class="cont-task4" id="contTask4">
+            <div class="cont-task3" id="contTask3">
                 <img class="log-part" src="../assets/logos/000135.png" alt="logo_agrupacion">
                 <p><b> <span class="sp-votos" id="tpd-1"></b></span></p>
-                <p class="sp-votos"><span class="tpn-1" id="tpn-4"></span></p>
-                <p class="sp-votos"><span class="tpd-1" id="tdp-4"></span></p>
-                <p class="sp-votos"><span class="tpr-1" id="tpr-4"></span></p>
             </div>
-            <hr>
-            <div class="cont-task5" id="contTask5">
-                <img class="log-part" src="../assets/logos/000136.png" alt="logo_agrupacion">
-                <p class="sp-votos"><b> <span id="tpd-5"></b></span></p>
-                <p class="sp-votos"><span class="tpn-5" id="tpn-5"></span></p>
-                <div class="sp-gris"><p> <span></span></p></div>
-                <div class="sp-gris"><p> <span></span></p></div>
+            <hr>  
+        <div class="cont-parla">
+            <div class="cont-task2" id="contTask2">
+                <img class="h-12-w-12 " src="../assets/logos/000134.png" alt="logo_agrupacion"><br>
+                <hr><p class="sp-votos"><b> <span id="tpd-3"></b></span></p>
+                <!--p class="sp-votos"><b><span class="tpr-3" id="tpd-3"></b></span> votos</p-->
+              
             </div>
-        
-        
+            <div class="cont-task3">
+                <img class="h-12-w-12 " src="../assets/logos/000135.png" alt="logo_agrupacion"><br>
+                <p class="pf-part" id="pf-part4"></p>
+                <hr>
+                <p class="sp-votos"><b><span class="tpr-4" id="tpd-1"></b> </span> votos</p>
+              
+            </div>
+        </div>   
+        <div class="contParla" id="contParla">
+            <div>
+            <span>Nulos</span><br>
+            <span id="spnul">0</span>
+        </div>
+        <div>
+            <span>Recurridos</span><br>
+            <span id="sprec">0</span>
+        </div>
+        <div>
+            <span>Impugnados</span><br>
+            <span id="spimp">0</span>
+        </div>
+        <div>
+            <span>Comando</span><br>
+            <span id="spcom">0</span>
+        </div>
+        <div>
+            <span>Blancos</span><br>
+            <span id="spbla">0</span>
+        </div>
+        </div>   
+    </div>
     </main>    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <script src="../scripts/readcirc.js"></script>
+    <script src="/balo/scripts/readcirc.js"></script>
     <script src="../scripts/readesc.js"></script>
     <script src="../scripts/readmes.js"></script>
 </body>

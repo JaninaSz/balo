@@ -1,0 +1,14 @@
+[
+{"circuito": 99,
+"pres_1": 700,
+"pres_2": 207},
+{"seccion":"3","circuito":"17","numesc":"32","nombresc":"Esc. Belgrano","numesa":"1136","cantiso":"150","cantivo":"150","pres_1":"71","pres_2":"13","vtnul":"0","vtrec":"0","vtimp":"0","vtcom":"0","vtbla":"5"},
+{"seccion":"3","circuito":"17","numesc":"32","nombresc":"Esc. Belgrano","numesa":"1137","cantiso":"100","cantivo":"100","pres_1":"71","pres_2":"63","vtnul":"10","vtrec":"0","vtimp":"5","vtcom":"0","vtbla":"5"},
+{"seccion":"3","circuito":"17","numesc":"32","nombresc":"Esc. Belgrano","numesa":"1144","cantiso":"111","cantivo":"111","pres_1":"122","pres_2":"12","vtnul":"7","vtrec":"0","vtimp":"4","vtcom":"0","vtbla":"4"},
+{"seccion":"3","circuito":"17","numesc":"2","nombresc":"Col. Belgrano","numesa":"1150","cantiso":"35","cantivo":"35","pres_1":"67","pres_2":"67","vtnul":"7","vtrec":"0","vtimp":"4","vtcom":"0","vtbla":"8"},
+{"seccion":"3","circuito":"17","numesc":"2","nombresc":"Col. Belgrano","numesa":"1154","cantiso":"13","cantivo":"13","pres_1":"1","pres_2":"1","vtnul":"3","vtrec":"0","vtimp":"0","vtcom":"0","vtbla":"8"},
+{"seccion":"3","circuito":"17","numesc":"4","nombresc":"Col. San Martin","numesa":"1186","cantiso":"23","cantivo":"23","pres_1":"21","pres_2":"21","vtnul":"7","vtrec":"0","vtimp":"0","vtcom":"0","vtbla":"4"},
+{"seccion":"3","circuito":"17","numesc":"435","nombresc":"Esc. Centenario","numesa":"1216","cantiso":"112","cantivo":"112","pres_1":"23","pres_2":"23","vtnul":"3","vtrec":"0","vtimp":"3","vtcom":"0","vtbla":"3"},
+{"seccion":"3","circuito":"18","numesc":"565","nombresc":"Esc. Alberdi","numesa":"1228","cantiso":"111","cantivo":"111","pres_1":"0","pres_2":"0","vtnul":"0","vtrec":"0","vtimp":"0","vtcom":"0","vtbla":"0"},
+{"seccion":"3","circuito":"18","numesc":"565","nombresc":"Esc. Alberdi","numesa":"1230","cantiso":"120","cantivo":"120","pres_1":"35","pres_2":"35","vtnul":"35","vtrec":"0","vtimp":"4","vtcom":"0","vtbla":"8"}
+]

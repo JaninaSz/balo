@@ -1,84 +1,84 @@
+//var v_cir = document.getElementById("sltCirc").value;
+
 // onload="cargar ()"
 function cargar() {
-    const circ = fetch("../assets/dt/cirok.json")
+    const circ = fetch("../assets/dt/votodos.json")
 
     circ.then(res => res.json())
-        .then(datos => {
-            iniciar(datos);
-            console.log(datos);
+        .then(data => {
+            iniciar(data);
+            console.log(data);
         });
 }
 
-function iniciar(datos) {    
+function iniciar(data) {    
     var subtit = document.getElementById("p-seleccionado");
     var spnc=document.getElementById("sp-nci");
-    spnc.textContent=`- ${valor.numcir} -`;
-   /* $.each(datos, function (numcir, nombresc) {
-        $sltEsc.append('<option value=' + datos.numcir + '>' + datos.nombresc + '</option>');
+    spnc.textContent=`- ${valor.circuito} -`;
+    
+    /*$.each(data, function (circuito, nombresc) {
+        $sltEsc.append('<option value=' + data.circuito + '>' + data.nombresc + '</option>');
     });*/
-    for (let valor of datos) {
-
+    for (let valor of data) {
+        alert (valor.circuito)
         if (v_esc == valor.nombresc) {
         
         subtit.textContent=` N° ${valor.numesc} - ${valor.nombresc}`;
         }
+        alert ("circok "+valor.circuito)
     }
 }
-
+/*
 $(document).ready(function(){
         
-});
+});*/
 function selecCirc() {
-    const circ = fetch("../assets/dt/cirok.json");
+    const circ = fetch("../assets/dt/votodos.json");
    
     circ.then(resul => resul.json())
-        .then(datos => {
-            valCir(datos)
-            console.log(datos);
-        });
+        .then(data => {
+            valCir(data)
+            console.log(data);
+        });        
     }
-function valCir(datos) {  
+function valCir(data) {  
     var v_cir = document.getElementById("sltCirc").value;
-    for (let valor of datos) {
-        if (v_cir == valor.numcir) {
-        
-            contTask3.innerHTML = `
-                <img class="log-par" src="../assets/logos/000132.png" alt="logo_agrupacion">
-
-                <p class="sp-votos"><b><span id="tpd-1">${valor.pre1}</b></span></p>
-                <p class="sp-votos"><span class="tpn-1" id="tpn-1">${valor.pan1}</span></p>
-                <p class="sp-votos"><span class="tpd-1" id="tdp-1">${valor.dip1}</span></p>
-                <p class="sp-votos"><span class="tpr-1" id="tpr-1">${valor.par1}</span></p>
-                `;
-            contTask1.innerHTML = `     
-                <img class="log-par" src="../assets/logos/000133.png" alt="logo_agrupacion">
-                <p class="sp-votos"><b> <span  id="tpd-2">${valor.pre2}</b></span></p>
-                <p class="sp-votos"><span id="tpn-2">${valor.pan2}</span></p>
-                <div class="sp-gris"><p> <span ></span></p></div>
-                <div class="sp-gris"><p> <span ></span></p></div>`
+    
+    for (let valor of data) {
+        if (v_cir == valor.circuito) {
+            
             contTask2.innerHTML = `
+            
                 <img class="log-par" src="../assets/logos/000134.png" alt="logo_agrupacion">
-
-                <p class="sp-votos"><b><span id="tpd-1">${valor.pre3}</b></span></p>
-                <p class="sp-votos"><span class="tpn-1" id="tpn-2">${valor.pan3}</span></p>
-                <p class="sp-votos"><span class="tpd-1" id="tdp-1">${valor.dip3}</span></p>
-                <p class="sp-votos"><span class="tpr-1" id="tpr-1">${valor.par3}</span></p>
+                <br><hr><p class="sp-votos"><b><span id="tpd-1">${valor.pres_1}</b> votos</span></p>
                 `;
-            contTask4.innerHTML = `
+            contTask3.innerHTML = `
                 <img class="log-par" src="../assets/logos/000135.png" alt="logo_agrupacion">
-
-                <p class="sp-votos"><b><span id="tpd-1">${valor.pre4}</b></span></p>
-                <p class="sp-votos"><span class="tpn-1" id="tpn-2">${valor.pan4}</span></p>
-                <p class="sp-votos"><span class="tpd-1" id="tdp-1">${valor.dip4}</span></p>
-                <p class="sp-votos"><span class="tpr-1" id="tpr-1">${valor.par4}</span></p>
-                `;
-            contTask5.innerHTML = `     
-                <img class="log-par" src="../assets/logos/000136.png" alt="logo_agrupacion">
-                <p class="sp-votos"><b><span id="tpd-2">${valor.pre5}</b></span></p>
-                <p class="sp-votos"><span class="tpn-1" id="tpn-2">${valor.pan5}</span></p>
-                <div class="sp-gris"><p> <span ></span></p></div>
-                <div class="sp-gris"><p> <span ></span></p></div>
-                `
+                <br><hr><p class="sp-votos"><b><span  id="tpd-2">${valor.pres_2}</b></span> votos</p>
+                `;  
+            contParla.innerHTML = `
+            <div>
+            <span>Nulos</span><br>
+            <span id="spnul">${valor.vtnul}</span>
+        </div>
+        <div>
+            <span>Recurridos</span><br>
+            <span id="sprec">${valor.vtrec}</span>
+        </div>
+        <div>
+            <span>Impugnados</span><br>
+            <span id="spimp">${valor.vtimp}</span>
+        </div>
+        <div>
+            <span>Comando</span><br>
+            <span id="spcom">${valor.vtcom}</span>
+        </div>
+        <div>
+            <span>Blancos</span><br>
+            <span id="spbla">${valor.vtbla}</span>
+        </div>
+        </div>  
+        `; 
         }
     }
     

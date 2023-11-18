@@ -1,6 +1,6 @@
 var d = new Date();
 
-  //document.getElementById("current_date").innerHTML = getHours();
+  /*document.getElementById("current_date").innerHTML = getHours();
   window.onload = function () {
     window.setTimeout('getSecs()', 1000);
 }
@@ -13,14 +13,14 @@ var d = new Date();
     if (minutes < 10) minutes = "0" + minutes;
       if (seconds < 10) seconds = "0" + seconds;
         let HoraActual = hours + ":" + minutes + ":" + seconds
-        window.setTimeout('getSecs()', 1000); 
+        window.setTimeout('getSecs()', 1000); */
        
 
-
+/*
 var closeButtons = $('.close_window');
 closeButtons.on('click', function() {
   $(this).parent().hide();
-});
+});*/
 
 function validar() {
   var usuario = document.getElementById("user").value;
@@ -33,7 +33,7 @@ function validar() {
     return false;
   }
   }
-
+/*
 function confirmActa() {
   //Capturar valores de la URL
   const valores = window.location.search;
@@ -41,9 +41,11 @@ function confirmActa() {
   const urlParams = new URLSearchParams(valores);
   //Accedemos a los valores
   var nMesa = urlParams.get('nMesa');
+  var numesc = urlParams.get('es');
+  document.getElementById("numesc").value =numesc;
+  document.getElementById("numeEsa").value =nMesa;
 
-
-    /*alert(nMesa);
+    alert(nMesa);
   alert("asas");
 <div class="content">
               <div class="content-text">Para evitar errores, deberá <b>confirmar</b> la mesa seleccionada.
@@ -55,8 +57,8 @@ function confirmActa() {
                   </div>
               </div>
   
-          </div> function showTime(){*/
-}
+          </div> function showTime(){
+}*/
 function showTime() {
   myDate = new Date();
   hours = myDate.getHours();
@@ -74,7 +76,7 @@ function showTime() {
   //===
   // INIT
   //===
-  updateCountdown();
+  //updateCountdown();
   // Refresh every second
   setInterval(updateCountdown, seconds);
 }

@@ -5,17 +5,19 @@
 }
 
 .cont-encab {
-    margin: 5px;
-    padding: 15px;
+    padding: 20px 15px;
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: space-between;    
+    background-color: white;
 }
 
 .mesa {
     font-size: 35px;
 }
-
+.sp-inv{
+    color: red;
+}
 .lbl-mesa {
     font-size: 50px;
 
@@ -27,6 +29,9 @@
 .numMesa,
 .nMesa {
     background-color: darkgray;
+}
+.columnActa{
+    width: 100%;
 }
 
 button {
@@ -41,6 +46,7 @@ button {
 .cont-regresar {
     display: flex;
     justify-content: space-between;
+    background-color: white;
 }
 
 .escudo {
@@ -49,18 +55,51 @@ button {
     justify-content: center;
     align-items: center;
 }
+.form-encab {
+    height:auto;
+    width: auto;   
+    display: flex;    
+    justify-content: center;    
+    background-color: white;
+}
+.frmActa {
+    height:auto;
+    width: auto;       
+    background-color: white;
+}
+.cont-tabla{
+    background-color: white;
+}
+table{
+    background-color: white;
+    align-self: center;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    height:auto;
+    width: 550px;   
+}
+tr td {
+    border-color: white;
+}
+.vot-cel{
+    text-align: right;
+}
 input {
     text-align: center;
+    width: 70px;
 }
 button{
     cursor: pointer;
 }
 .btn-regresar {
-    height: 40px;
+    height: 50px;    
+    font-weight: bold;
 }
 
 .cont-btn {
-    text-align: center;
+    text-align: center;    
+    background-color: white;
 }
 .btn-enviar{
     font-weight: bold;

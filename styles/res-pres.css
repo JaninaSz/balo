@@ -37,7 +37,19 @@ h3 {
 .sp-votos{
     font-size: xx-large;
 }
-
+.contParla{
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 5px;
+    overflow: hidden;
+    margin-top: 15px;
+    align-items: center;
+    display:flex;   
+    justify-content: space-evenly;
+    align-items:center;
+   /*flex-direction: column; */
+}
 .cont-task1 {
     width: 200px;
     height: auto;
@@ -59,11 +71,10 @@ h3 {
 }
 
 .cont-task3 {
-    width: 200px;
+    width: 202px;
     height: auto;
     border: 1px solid grey;
-    border-left: 9px solid #5b97d7;
-    border-top: 4px solid #5b97d7;
+    border-top: 9px solid #5b97d7;
     border-radius: 10px;
     padding: 5px;
     margin-top: 5px;
@@ -120,11 +131,11 @@ h3 {
 .accordion3 {    
     width: 170px;
     height: auto;
+    margin: auto;
     text-align: center;
     border: 1px solid grey;
-    border-left: 11px solid #5b97d7;
     border-top: 9px solid #5b97d7;
-    padding: 10px;
+    padding: 8px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 25px;

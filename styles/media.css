@@ -107,7 +107,7 @@ h3 {
     }
 
     .box-content {
-        width: 280px;
+        width: auto;
         padding: 5px;
         justify-content: space-between;
         align-items: start;
@@ -157,8 +157,8 @@ h3 {
     height: 70px;
 }
 .icono{
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
 }
 .dv-frencur{
     width: 90px;
@@ -245,7 +245,7 @@ h3 {
     }
 }
 /*================================================*/
-@media(max-width:505px) {
+@media(max-width:500px) {
     .topNav {
         width: 100%;
         border-top: 1px solid #3498DB;
@@ -289,7 +289,7 @@ h3 {
     .box-content {
         position: absolute;
         margin: auto;
-        width: 90px;
+        width: auto;
         padding: 5px;
 }
     .acordeon-invisible {

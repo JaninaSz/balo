@@ -25,7 +25,7 @@ h3 {
 }
 
 .sp-votos {
-    font-size: 20px;
+    font-size: 32px;
     margin: 12px;
     margin-left: 0px;
     text-align: left;
@@ -42,19 +42,23 @@ h3 {
 }
 .cont-todos {
     border-radius: 10px;
-    margin-left: 10px;
+    text-align: center;  
+    align-self: center;
+    font-weight: bold;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.cont-parla{
+.contParla{
     width: 800px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
-    padding: 5px;
+    padding: 5px;    
+    align-items: center;
+    margin-top: 15px;
     overflow: hidden;
     display:flex;   
-    justify-content: space-between;
+    justify-content: space-around;
     align-items:center;
    /*flex-direction: column; */
 }
@@ -66,9 +70,35 @@ h3 {
     justify-content: space-around;
     align-items: center;
 }
+.contTask2 {
+    width: 200px;
+    height: auto;
+    border: 1px solid grey;
+    border-top: 9px solid #5b97d7;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 5px;
+}
+.cont-tasko3 {
+    width: 200px;
+    height: auto;
+    border: 1px solid grey;
+    border-top: 9px solid #5b97d7;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 5px;
+}
+.cont-task4 {
+    width: 200px;
+    height: auto;
+    border: 1px solid grey;
+    
+    border-left: 9px solid #651273;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 5px;
+}
 .cont-task1,
-.cont-task3,
-.cont-task4,
 .cont-task5 {
     
     border: 1px solid white;  

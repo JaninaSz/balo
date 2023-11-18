@@ -71,7 +71,7 @@ hr {
 .btn-ver{
     padding: 4px;
     font-weight: bold;
-    font-size: large;
+    font-size:16px;
     color: white;
     background-color:rgb(42, 134, 200);
     border-radius: 10px;
@@ -91,9 +91,9 @@ hr {
     padding: 5px;
     overflow: hidden;
     margin-top: 15px;
-
+    
     display:flex;   
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items:center;
    /*flex-direction: column; */
 }
@@ -184,7 +184,9 @@ textarea {
     justify-items: start;
 }
 .flex-1 {
-    flex: 1 1
+    flex: 1 1;
+    justify-content: space-between;
+    align-items: center;
 }
 .btn-plus{
     text-align: center;

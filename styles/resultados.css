@@ -13,7 +13,7 @@ h3{
     margin-top: 15px;
 
     display:flex;   
-    justify-content: space-between;
+    justify-content: space-around;
     align-items:center;
    /*flex-direction: column; */
 }
@@ -47,7 +47,7 @@ h3{
 .box-content {
     height: auto;
     width: 300px;
-    padding: 20px;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,6 +61,17 @@ h3{
 label{
     padding: 10px;
     margin: 15px;
+}
+
+.accordion__label a{    
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    
+    border-radius: 10px;
+    color: rgb(132, 132, 135);
 }
 .accordion__content a{    
     text-decoration: none;
@@ -118,14 +129,22 @@ label{
 }
 
 .accordion__label, .accordion__content{
-    padding: 14px 20px;
+    padding: 0px 15px;
 }
 .accordion__label{
-    display: block;
+    display: flex;
     color: blue;
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none;
     transition: background-color 0.1s;
+}
+.accordion__label a{
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    color: rgb(132, 132, 135);
 }
 .accordion__label:hover{
     background-color: rgba(0, 0, 0, 0.1);

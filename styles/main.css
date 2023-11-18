@@ -106,7 +106,10 @@ margin: 95px;
     justify-content: end;
     align-items: end;
 }
-
+.sp-votos{
+    font-size: 42px;
+    color:rgb(0, 156, 222);
+}
 .p-confirm {
     margin-top: 10px;
 }
