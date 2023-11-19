@@ -105,10 +105,13 @@ $lines = iterateDataToTable($data1);
 <div class="cont-tit">
         <div class="tit"><h3> Resultados por circuito</h3><b><span class="sp-votos" id="sp-nci"></span></b></div><br>
         <p class="sub" id="p-seleccionado"></p>
+        <p>Estará disponible en cuanto se finalice la carga.</p>
     </div>
 
                     <div class="cont-parla">
+                    
                         <div>
+                        
                             <span class="lbl-mesa"><b> Circuito: </b></span>
                             <select name="circ" id="sltCirc">
                                 <option value="99"><b>Todos </b></option>
@@ -119,8 +122,8 @@ $lines = iterateDataToTable($data1);
                                 <option value="21">21</option>
                                 <option value="22">22</option>
                             </select>
-                            <hr><button class="btn-ver" onclick="selecCirc()">Consultar</button>
-                            <!--hr><button class="btn-ver" onclick="selCirc()">Consultar</button-->
+                            <hr><button class="btn-ver" onclick="selCirc()">Consultar</button>
+                            <!--hr><button class="btn-ver" onclick="selecCirc()">Consultar</button-->
                         </div>
 
                         <div><span class="lbl-mesa"><b> Esc.: </b></span>

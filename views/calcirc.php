@@ -45,7 +45,7 @@ function iterateDataToTable($data1)
 
 $data1 = getTable('lectura');
 $lines = iterateDataToTable($data1);
-
+echo $lines;
 //c0
 function reci0($lecir0)
 {
@@ -87,7 +87,7 @@ function reco0($data0)
 
 $data0 = getTable('lecir0');
 $lines = iterateDataToTable($data0);
-
+echo $lines;
 //c1
 function reci1($lecir1)
 {
@@ -135,6 +135,7 @@ function reco1($data1)
 
 $data1 = getTable('lecir1');
 $lines = iterateDataToTable($data1);
+echo $lines;
 ?>
 
 

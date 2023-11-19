@@ -43,10 +43,7 @@ function selCirc() {
             carCirc();
             break;
         case "17":
-            alert("cir 17")
-            //carCirc0();
-            //function carCirc0() { 
-    
+            alert("cir 17")    
                 //Mesas escrutadas
                 var entEscrut=document.getElementById("e-cantReg").value;
                 document.getElementById("escrut").textContent = entEscrut;
@@ -80,17 +77,21 @@ function selCirc() {
         case "18":
             alert("cir 18")   
             
-var entTpd1=document.getElementById("e-tpd1").value;
-var entTpd2=document.getElementById("e-tpd2").value;
-var entTnul=document.getElementById("e-tnul").value;
+var entTpd1=document.getElementById("e1-tpd1").value;
+var entTpd2=document.getElementById("e1-tpd2").value;
+var entTnul=document.getElementById("e1-tnul").value;
+var entTrec=document.getElementById("e1-trec").value;
+var entTimp=document.getElementById("e1-timp").value;
+var entTcom=document.getElementById("e1-tcom").value;
+var entTbla=document.getElementById("e1-tbla").value;
             contTask2.innerHTML = `
             
                 <img class="log-par" src="../assets/logos/000134.png" alt="logo_agrupacion">
-                <br><hr><p class="sp-votos"><b><span id="tpd-1">${entTpd1} </b></span>votos</p><hr>
+                <br><hr><p class="sp-votos"><b><span id="tpd-1">${entTpd1}</b></span> votos</p>
                 `;
             contTask3.innerHTML = `
                 <img class="log-par" src="../assets/logos/000135.png" alt="logo_agrupacion">
-                <p class="sp-votos"><b> <span  id="tpd-2">${entTpd2} </b></span>votos</p>
+                <br><hr><p class="sp-votos"><b><span id="tpd-2">${entTpd2}</b></span> votos</p>
                 `;  
             contParla.innerHTML = `
             <div>
@@ -99,19 +100,19 @@ var entTnul=document.getElementById("e-tnul").value;
         </div>
         <div>
             <span>Recurridos</span><br>
-            <span id="sprec"></span>
+            <span id="sprec">${entTrec} </span>
         </div>
         <div>
             <span>Impugnados</span><br>
-            <span id="spimp"></span>
+            <span id="spimp">${entTimp} </span>
         </div>
         <div>
             <span>Comando</span><br>
-            <span id="spcom"></span>
+            <span id="spcom">${entTcom} </span>
         </div>
         <div>
             <span>Blancos</span><br>
-            <span id="spbla"></span>
+            <span id="spbla">${entTbla} </span>
         </div>
         </div>  
         `; 

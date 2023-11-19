@@ -69,7 +69,7 @@ function getTable($lectura)
       </div>
     </div>-->
     <br>
-    <h4>Balotaje - 19 de noviembre de 2023</h4><hr>
+    <h4> Balotaje - 19 de noviembre de 2023</h4><hr>
     <h3>Presidente - Vicepresidente</h3>
     <br>
       <div class="cont-parla">

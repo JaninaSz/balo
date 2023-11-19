@@ -9,11 +9,12 @@
       
 //Calcular porcentajes
 //votos/total*100
+var entTvot=document.getElementById("e-tvot").value;
 totalpersonas=34064
 votaron=800
 function porcentajes(){
-calPd1=(entTpd1/votaron)*100;
-calPd2=(entTpd2/votaron)*100;
+calPd1=(entTpd1/entTvot)*100;
+calPd2=(entTpd2/entTvot)*100;
 
 
 var numero = 1.77777777;
